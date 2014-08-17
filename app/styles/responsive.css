@@ -1,0 +1,32 @@
+@media only screen and (max-width: 1108px) {
+
+#options {
+	padding: 1em 2em;
+}
+
+#tm {
+	margin-left: 3em;
+}
+
+}	
+
+@media only screen and (max-width: 450px) {
+
+section {
+	margin: 1em;
+}	
+
+div {
+	margin: 1em 0;
+}
+
+footer {
+	font-size: .9em;
+	padding: 1em;
+}
+
+#tm {
+	margin-left: 6.5em;
+}
+
+}

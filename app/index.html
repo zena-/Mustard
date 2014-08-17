@@ -1,0 +1,187 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>aceH</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/responsive.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=526853880745597&version=v2.0";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+                </script>
+
+            <!--[if lt IE 10]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            
+
+            <section id="must">
+                <center>
+                    <h1 class="text-center"> Mustard <br><small>Healthy meals based on you <span class="glyphicon glyphicon-cutlery"></span></small></h1>
+                    
+                    <!-- twitter -->
+                    <a id="tm" href="https://twitter.com/intent/tweet?button_hashtag=Mustard&text=Whats%20eating%20you" class="twitter-hashtag-button" data-lang="en" data-related="jasoncosta" data-size="large">Tweet #Mustard</a>
+
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                    </script>
+
+                    <br> <!-- facebook like -->
+                    <div
+                      class="fb-like"
+                      data-send="true"
+                      data-width="400"
+                      data-show-faces="true">
+                    </div>
+                </center>    
+            </section>    
+
+            <section id="options">
+                <center>
+
+                <div id="spend">
+                    <h3>How much would you like to spend</h3>
+                    <input type="number" min="0.01" step="0.01" max="2500" value="25.00">
+                </div>   
+                <br>
+
+                <div id="drop" class="clearfix">
+
+                    <div id="retrict" class="btn-group">
+                        <small>Dietary Filter</small>
+                        <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+                        Retrictions <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li>Vegetarian</li>
+                        <li>Vegan</li>
+                        <li>Gluten-free</li>
+                        <li>Nut-free</li>
+                        <li>Dairy-free</li>
+                      </ul>
+                    </div>
+
+                    <!-- <br> -->
+
+                    <div id="age" class="btn-group">
+                        <small>Every age have there own needs</small>
+                      <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+                        Age Range <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li>Less than 17</li>
+                        <li>18-24</li>
+                        <li>25-29</li>
+                        <li>30-34</li>
+                        <li>35-39</li>
+                        <li>40 or above</li>
+                      </ul>
+                    </div>
+
+                    <!-- <br> -->
+
+                    <div id="meals" class="btn-group">
+                        <small>Are you planing a meal for just today or for the week?</small>
+                      <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+                        Number of meals <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li>Today</li>
+                        <li>Work Week</li>
+                        <li>Weekend</li>
+                        <li>All seven days</li>
+                      </ul>
+                    </div>
+                </div>    
+
+                <div id="preg">
+                    <h3>Pregnant</h3>
+                    <small>We wan to make sure your baby is healthy as well</small>
+                    <div class="slideThree">    
+                        <input type="checkbox" value="None" id="slideThree" name="check" />
+                        <label for="slideThree"></label>
+                    </div>
+                    <!-- <input type="radio" value="yes">Yes
+                    <input type="radio" value="no">No -->
+                </div> 
+                <br>
+
+                <!-- Feed Me ...... Button trigger modal -->
+                <button class="btn btn-lg" data-toggle="modal" data-target="#myModal">
+                  Feed Me
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Feeding You</h4>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                </center>
+            </section>
+
+            <footer class="clearfix">
+                &copy; 2014 Mustard Inc. All Rights Reserved.
+                <h5>Made In NYC</h5> <span class="glyphicon glyphicon-leaf"></span>
+            </footer>
+        </div>
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
